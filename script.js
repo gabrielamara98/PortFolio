@@ -1,7 +1,7 @@
 
 function darkMode(){
 //header-sections//
-   document.querySelector(".section").style.backgroundImage="url(./image4.jpg)"
+   document.querySelector(".section").style.backgroundImage="url(./img/image4.jpg)"
    var backColor=document.querySelectorAll(".sectionSlides");
    for(i=0;i<backColor.length;i++){
       backColor[i].style.borderBottom="1px solid gold"
@@ -25,13 +25,14 @@ function darkMode(){
     linguagensTipos.forEach(linguagensComp => {
        linguagensComp.style.color="white";
    })
+   
    var bordaBarra=document.querySelectorAll(".progress-bar");
     bordaBarra.forEach(bordaBarraX => {
-       bordaBarraX.style.border="1px groove gold";
+       bordaBarraX.style.border="0.5px groove gold";
    })
    var conteudoBarra=document.querySelectorAll(".inside-bar");
     conteudoBarra.forEach(conteudoBarraX =>{
-       conteudoBarraX.style.backgroundColor="orange";
+       conteudoBarraX.style.backgroundColor="gold";
    })
    //Soft Skills
    document.querySelector(".soft-skills").style.borderLeft="1px solid white"
@@ -63,15 +64,49 @@ function darkMode(){
    document.querySelector("#textBanner").style.color="white" 
    var borderImageChoose=document.querySelectorAll(".flex-project img");
       for(a=0;a<borderImageChoose.length;a++){
-         borderImageChoose[a].style.border="4px groove gold"
-      }
+         borderImageChoose[a].style.border="0.5px groove gold"
+   }
+
+   ///Certificados///
+   document.querySelector(".flex-control-cert").style.border="3px groove gold"
+   var bordaCard=document.querySelectorAll(".card");
+   bordaCard.forEach(bordaCardX=>{
+      bordaCardX.style.border="3px groove gold"
+   })
+   var conteudoCard=document.querySelectorAll(".card-text");
+   conteudoCard.forEach(conteudoCardX => {
+      conteudoCardX.style.borderTop="1px solid gold";
+      conteudoCardX.style.backgroundColor="green"
+      conteudoCardX.style.color="white"
+   })
+   var CorIconesCert=document.querySelectorAll(".card i");
+   CorIconesCert.forEach(CorIconesCertX=>{
+      CorIconesCertX.style.color="white"
+   })
+   var palavraIconesCert=document.querySelectorAll(".card-icon-cert span");
+   palavraIconesCert.forEach(palavraIconesCertX=>{
+      palavraIconesCertX.style.color="white";
+   })
+   var cardFrameProj=document.querySelector(".card-selected");
+   cardFrameProj.style.border="2px groove gold"
+
+   var bordaBottomCardFrameProj=document.querySelector(".list-course");
+   bordaBottomCardFrameProj.style.borderTop="2px groove gold";
+
+   var tituloFrameProj=document.querySelector("#tituloCourse");
+   tituloFrameProj.style.color="white"
+
+   var listaFrame=document.querySelectorAll(".list-course li");
+   listaFrame.forEach(listaFrameX => {
+      listaFrameX.style.color="white";
+   })
 }
 
 //////////////////////////////////////////////
 
 function lightMode(){
    //header-sections//
-   document.querySelector(".section").style.backgroundImage="url(./image.jpg)"
+   document.querySelector(".section").style.backgroundImage="url(./img/image.jpg)"
    var backColor=document.querySelectorAll(".sectionSlides");
    for(i=0;i<backColor.length;i++){
       backColor[i].style.borderBottom=null
@@ -135,31 +170,98 @@ function lightMode(){
    for(a=0;a<borderImageChoose.length;a++){
       borderImageChoose[a].style.border=null
    }
+    ///Certificados///
+    document.querySelector(".flex-control-cert").style.border=null
+    var bordaCard=document.querySelectorAll(".card");
+    bordaCard.forEach(bordaCardX=>{
+       bordaCardX.style.border=null
+    })
+    var conteudoCard=document.querySelectorAll(".card-text");
+    conteudoCard.forEach(conteudoCardX => {
+       conteudoCardX.style.borderTop=null
+       conteudoCardX.style.backgroundColor=null
+       conteudoCardX.style.color=null
+    })
+    var CorIconesCert=document.querySelectorAll(".card i");
+    CorIconesCert.forEach(CorIconesCertX=>{
+       CorIconesCertX.style.color=null
+    })
+    var palavraIconesCert=document.querySelectorAll(".card-icon-cert span");
+    palavraIconesCert.forEach(palavraIconesCertX=>{
+       palavraIconesCertX.style.color=null
+    })
+    var cardFrameProj=document.querySelector(".card-selected");
+    cardFrameProj.style.border=null
+ 
+    var bordaBottomCardFrameProj=document.querySelector(".list-course");
+    bordaBottomCardFrameProj.style.borderTop=null
+ 
+    var tituloFrameProj=document.querySelector("#tituloCourse");
+    tituloFrameProj.style.color=null
+ 
+    var listaFrame=document.querySelectorAll(".list-course li");
+    listaFrame.forEach(listaFrameX => {
+       listaFrameX.style.color=null;
+    })
 
 }
 
 
 //Functions for select projects changes//
 function myFunction(){
-   document.querySelector("#titleBanner").innerHTML="Rainbow Six Extraction Fan Wiki"
-   document.querySelector("#imageBanner").src="./R6-EXTRACTION.jpg"
-   document.querySelector("#textBanner").innerHTML="1"
+   document.querySelector("#titleBanner").textContent="Rainbow Six Extraction Fan Wiki"
+   document.querySelector("#imageBanner").src="./img/R6-EXTRACTION.jpg"
+   document.querySelector("#textBanner").textContent="1"
 }
 
 function myFunction1(){
-   document.querySelector("#titleBanner").innerHTML="Projeto2"
+   document.querySelector("#titleBanner").textContent="Projeto2"
    document.querySelector("#imageBanner").src="https://pbs.twimg.com/media/EJ16B8pX0A4ye2g.jpg"
-   document.querySelector("#textBanner").innerHTML="2";
+   document.querySelector("#textBanner").textContent="2";
 }
 
 function myFunction2(){
-   document.querySelector("#titleBanner").innerHTML="Projeto3"
+   document.querySelector("#titleBanner").textContent="Projeto3"
    document.querySelector("#imageBanner").src="https://pbs.twimg.com/media/EJ16B8pX0A4ye2g.jpg"
-   document.querySelector("#textBanner").innerHTML="3."
+   document.querySelector("#textBanner").textContent="3."
 }
 
 function myFunction3(){
-   document.querySelector("#titleBanner").innerHTML="Projeto4"
+   document.querySelector("#titleBanner").textContent="Projeto4"
    document.querySelector("#imageBanner").src="https://pbs.twimg.com/media/EJ16B8pX0A4ye2g.jpg"
-   document.querySelector("#textBanner").innerHTML="4."
+   document.querySelector("#textBanner").textContent="4."
+}
+
+function cardFunctionGrad(){
+   var lista=document.querySelectorAll(".list-course li");
+   lista.forEach(listaX=> {
+      listaX.style.display="block";
+   })
+   document.querySelector("#tituloCourse").textContent="Graduacao";
+   document.querySelector("#liCert").textContent="FIAP-Analise e Desenvolvimento de Sistemas-Em andamento";
+   
+}
+function cardFunctionHardCode(){
+   var lista=document.querySelectorAll(".list-course li");
+   lista.forEach(listaX=> {
+      listaX.style.display="block";
+   })
+   document.querySelector("#tituloCourse").textContent="Hard Code";
+   document.querySelector("#liCert").textContent="";
+}
+function cardFunctionWeb(){
+   var lista=document.querySelectorAll(".list-course li");
+   lista.forEach(listaX=> {
+      listaX.style.display="block";
+   })
+   document.querySelector("#tituloCourse").textContent="Web Development";
+   document.querySelector("#liCert").textContent="";
+}
+function cardFunctionOutros(){
+   var lista=document.querySelectorAll(".list-course li");
+   lista.forEach(listaX=> {
+      listaX.style.display="block";
+   })
+   document.querySelector("#tituloCourse").textContent="Outros";
+   document.querySelector("#liCert").textContent="";
 }

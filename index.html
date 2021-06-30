@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +37,7 @@
                 </header>
                 <div class="menu">
                     <div class="imagem-menu">
-                        <img id="img" src="./capa.jpg">
+                        <img id="img" src="./img/capa.jpg">
                     </div>
                     <div class="text-menu">
                         <h1>Gabriel Amara</h1>
@@ -56,10 +56,10 @@
                     <h1 id="exp">Experiencias</h1>
                 </div>
                 <div class="flex-control-exp">
-                    <div class="sobre-mim">
+                    <div class="flex-sobre-mim">
                         
                     </div>
-                    <div class="experienciasP">
+                    <div class="flex-experienciasP">
 
                     </div>
                 </div>
@@ -78,6 +78,7 @@
                                 <span>HTML5</span>
                                 <div class="progress-bar">
                                     <div id="html-progress"class="inside-bar">
+                                        <span>80%</span>
                                     </div>
                                 </div>     
                             </div>
@@ -85,6 +86,7 @@
                                 <span>CSS3</span>
                                 <div class="progress-bar">
                                     <div id="css-progress" class="inside-bar">
+                                        <span>50%</span>
                                     </div>
                                 </div>     
                             </div>
@@ -92,6 +94,7 @@
                                 <span>JavaScript</span>
                                 <div class="progress-bar">
                                     <div id="js-progress" class="inside-bar">
+                                        <span>20%</span>
                                     </div>
                                 </div>     
                             </div>
@@ -99,6 +102,7 @@
                                 <span>Python</span>
                                 <div class="progress-bar">
                                     <div  id="py-progress" class="inside-bar">
+                                        <span>30%</span>
                                     </div>
                                 </div>     
                             </div>
@@ -106,6 +110,7 @@
                                 <span>Java</span>
                                 <div class="progress-bar">
                                     <div id="java-progress" class="inside-bar">
+                                        <span>30%</span>
                                     </div>
                                 </div>     
                             </div>
@@ -168,17 +173,17 @@
                         <h1 id="titleBanner">Rainbow Six Extraction Fan Wiki</h1>
                     </div>
                     <div class="image-banner">
-                        <img id="imageBanner" src="./R6-EXTRACTION.jpg">
+                        <img id="imageBanner" src="./img/R6-EXTRACTION.jpg">
                     </div>
                     <div class="text-banner">
                         <p id="textBanner">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dolor inventore officia accusantium tenetur quod pariatur fugiat rerum? Beatae iusto officiis, dolor natus aliquid necessitatibus minima in voluptatibus dicta sit.</p>
                     </div>
                 </div>
                 <div class="flex-project">
-                    <img onclick="myFunction()" src="./R6-EX1.jpg">
-                    <img onclick="myFunction1()"src="./capa.jpg">
-                    <img onclick="myFunction2()"src="./capa.jpg">
-                    <img onclick="myFunction3()"src="./capa.jpg">
+                    <img onclick="myFunction()" src="./img/R6-EX1.jpg">
+                    <img onclick="myFunction1()"src="./img/capa.jpg">
+                    <img onclick="myFunction2()"src="./img/capa.jpg">
+                    <img onclick="myFunction3()"src="./img/capa.jpg">
                 </div>
             </div>
         </section>
@@ -186,6 +191,66 @@
             <div class="sectionSlides">
                 <div class="title">
                     <h1 id="cert">Certificados</h1>
+                </div>
+                <div class="flex-control-cert">
+                   <div class="projetos-escolha">
+                        <div class="card" onclick="cardFunctionGrad()">
+                            <div id="card-grad"class="card-icon-cert" >
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Graduacao</span>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque, non voluptates nesciunt fugiat net.</p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="cardFunctionHardCode()">
+                            <div id="card-hardCode"class="card-icon-cert" >
+                                <i class="fas fa-code"></i>
+                                <span>Hard Code</span>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque, non voluptates nesciunt fugiat net.</p>
+                            </div>
+                        </div>
+                        <div class="card"  onclick="cardFunctionWeb()">
+                            <div id ="card-web"class="card-icon-cert" onclick="cardFunctionWeb()">
+                                <i class="fas fa-coffee"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque, non voluptates nesciunt fugiat net.</p>
+                            </div>
+                        </div>
+                        <div onclick="cardFunctionOutros()" class="card">
+                            <div id="card-curiosidades"class="card-icon-cert" >
+                                <i class="fas fa-star"></i>
+                                <span>Outros</span>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque, non voluptates nesciunt fugiat net.</p>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="flex-card-selected">
+                       <div class="card-selected">
+                           <div class="title-course">
+                               <h1 id="tituloCourse"></h1>
+                           </div>
+                           <div class="list-course">
+                                <ul class="list-ul">
+                                    <li id="liCert"></li>
+                                    <li id="liCert1"></li>
+                                    <li id="liCert2"></li>
+                                    <li id="liCert3"></li>
+                                    <li id="liCert4"></li>
+                                    <li id="liCert5"></li>
+                                    <li id="liCert6"></li>
+                                    <li id="liCert7"></li>
+                                    <li id="liCert8"></li>
+                                </ul>
+                           </div>  
+                       </div>
+                   </div>
                 </div>
         </section>
         <footer>

@@ -25,7 +25,7 @@ body{
 .section{
     height: 650px;
     width: 100%;
-    background-image: url("./image.jpg");
+    background-image: url("./img/image.jpg");
     background-size: cover;
     background-attachment: fixed;
 
@@ -100,6 +100,7 @@ body{
     border-bottom: black solid 1px;
     height: 800px;
     width: 100%;
+    
 }
 
 
@@ -111,14 +112,14 @@ body{
     height: 600px;
     margin:0 auto;
 }
-.sobre-mim{
+.flex-sobre-mim{
     border:1px solid green;
     display: flex;
     justify-content: column;
     width: 50%;
     height: 100%;
 }
-.experienciasP{
+.flex-experienciasP{
     border:1px solid green;
     display: flex;
     justify-content: column;
@@ -171,7 +172,7 @@ body{
 .progress-bar{
     box-sizing: border-box;
     border-radius: 20px;
-    border: 1px groove grey;
+    border: 0.5px groove grey;
     height: 50%;
     margin-left:30px;
     max-width: 75%;
@@ -185,12 +186,15 @@ body{
     border-radius: 20px;
     height:100%;
     background-color: rgba(13, 170, 8, 0.993);
-
+    margin:0;
 }
-.inside-bar span {
+
+.inside-bar span{
     font-size: 10px;
+    margin:0 auto;
     font-weight: bolder;
 }
+
 #html-progress{
     width:80%;
 }
@@ -363,9 +367,128 @@ body{
 .flex-project img{
     box-sizing: border-box;
     border-radius: 50%;
-    border:4px  solid rgb(87, 87, 87);
+    border:0.5px  solid rgb(87, 87, 87);
+    transition: all .2s ease-in-out;
 }
 
+
+.flex-project img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.flex-control-cert{
+    border:3px groove rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    width:1400px;
+    height: 600px;
+    align-items: center;
+}
+
+.projetos-escolha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+}
+
+.card{
+    border:3px groove rgb(58, 57, 57);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 80%;
+    transition: all .2s ease-in-out;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card-icon-cert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+.card-icon-cert i{
+    font-size: 50px;
+}
+.card-icon-cert span{
+    font-weight: bolder;
+    margin-top:10px;
+}
+    
+
+.card-text{
+    background-color: aqua;
+    border-top:1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:40%;
+    width: 100%;
+    text-align: center;
+}
+
+.card-text p{
+    font-weight: bolder;
+}
+
+.flex-card-selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height:50%;
+    align-items: center;
+}
+
+.card-selected{
+    border-radius:10px;
+    border: 2px groove rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+}
+.title-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+}
+.title-course h1{
+    margin:0;
+}
+.list-course{
+    border-top: 2px groove rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75%;
+}
+.list-ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:80% ;
+    flex-wrap: wrap;
+}
+
+.list-course li{
+    display: none;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
 .title{
     display: flex;
     flex-direction: row;
@@ -374,6 +497,7 @@ body{
     font-size: 30px;
     color: black;
 }
+
 
 .footer{
     background-color: rgb(83, 82, 82, 0.3);
