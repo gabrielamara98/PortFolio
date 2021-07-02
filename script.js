@@ -1,6 +1,6 @@
 
 function darkMode(){
-//header-sections//
+   //header-sections//
    document.querySelector(".section").style.backgroundImage="url(./img/image4.jpg)"
    var backColor=document.querySelectorAll(".sectionSlides");
    for(i=0;i<backColor.length;i++){
@@ -11,12 +11,22 @@ function darkMode(){
    for(b=0;b<titleSections.length;b++){
       titleSections[b].style.color="white";
    }
+   document.querySelector("#lua").style.color="yellow";
+   document.querySelector("#sol").style.color=null;
+
    //footer//
    document.querySelector('.footer').style.backgroundColor="black";
    document.querySelector(".footer span").style.color="white";
    var iconFooter=document.querySelectorAll(".footer i");
    iconFooter.forEach(iconFooterX=>{
       iconFooterX.style.color="white";
+   })
+
+   //Experiencias//
+
+   var textoSobreMim=document.querySelectorAll(".flex-control-exp");
+   textoSobreMim.forEach(textoSobreMimX =>{
+      textoSobreMimX.style.color="white";
    })
    //COMPETENCIAS//
    //Liguagens
@@ -73,12 +83,7 @@ function darkMode(){
    bordaCard.forEach(bordaCardX=>{
       bordaCardX.style.border="3px groove gold"
    })
-   var conteudoCard=document.querySelectorAll(".card-text");
-   conteudoCard.forEach(conteudoCardX => {
-      conteudoCardX.style.borderTop="1px solid gold";
-      conteudoCardX.style.backgroundColor="green"
-      conteudoCardX.style.color="white"
-   })
+
    var CorIconesCert=document.querySelectorAll(".card i");
    CorIconesCert.forEach(CorIconesCertX=>{
       CorIconesCertX.style.color="white"
@@ -100,10 +105,10 @@ function darkMode(){
    listaFrame.forEach(listaFrameX => {
       listaFrameX.style.color="white";
    })
+
+
 }
-
 //////////////////////////////////////////////
-
 function lightMode(){
    //header-sections//
    document.querySelector(".section").style.backgroundImage="url(./img/image.jpg)"
@@ -116,12 +121,20 @@ function lightMode(){
    for(b=0;b<titleSections.length;b++){
       titleSections[b].style.color=null;
    }  
+   document.querySelector("#lua").style.color=null;
+   document.querySelector("#sol").style.color="orange";
    //footer//
    document.querySelector('.footer').style.backgroundColor="black";
    document.querySelector(".footer span").style.color="white";
    var iconFooter=document.querySelectorAll(".footer i");
    iconFooter.forEach(iconFooterX=>{
       iconFooterX.style.color="white";
+   })
+   //Experiencias//
+
+   var textoSobreMim=document.querySelectorAll(".flex-control-exp");
+   textoSobreMim.forEach(textoSobreMimX =>{
+      textoSobreMimX.style.color=null;
    })
    //COMPETENCIAS//
    //Liguagens
@@ -176,12 +189,6 @@ function lightMode(){
     bordaCard.forEach(bordaCardX=>{
        bordaCardX.style.border=null
     })
-    var conteudoCard=document.querySelectorAll(".card-text");
-    conteudoCard.forEach(conteudoCardX => {
-       conteudoCardX.style.borderTop=null
-       conteudoCardX.style.backgroundColor=null
-       conteudoCardX.style.color=null
-    })
     var CorIconesCert=document.querySelectorAll(".card i");
     CorIconesCert.forEach(CorIconesCertX=>{
        CorIconesCertX.style.color=null
@@ -211,33 +218,33 @@ function lightMode(){
 function myFunction(){
    document.querySelector("#titleBanner").textContent="Rainbow Six Extraction Fan Wiki"
    document.querySelector("#imageBanner").src="./img/R6-EXTRACTION.jpg"
-   document.querySelector("#textBanner").textContent="1"
+   document.querySelector("#textBanner").textContent="Uma fan Wiki reservada especialmente para para o novo jogo da franquia Rainbow Six. https://github.com/Capamara/Rainbow-Six-Extraction"
 }
 
 function myFunction1(){
-   document.querySelector("#titleBanner").textContent="Projeto2"
-   document.querySelector("#imageBanner").src="https://pbs.twimg.com/media/EJ16B8pX0A4ye2g.jpg"
-   document.querySelector("#textBanner").textContent="2";
+   document.querySelector("#titleBanner").textContent="????"
+   document.querySelector("#imageBanner").src=""
+   document.querySelector("#textBanner").textContent="??";
 }
 
 function myFunction2(){
-   document.querySelector("#titleBanner").textContent="Projeto3"
-   document.querySelector("#imageBanner").src="https://pbs.twimg.com/media/EJ16B8pX0A4ye2g.jpg"
-   document.querySelector("#textBanner").textContent="3."
+   document.querySelector("#titleBanner").textContent="???"
+   document.querySelector("#imageBanner").src=""
+   document.querySelector("#textBanner").textContent="???"
 }
 
 function myFunction3(){
-   document.querySelector("#titleBanner").textContent="Projeto4"
-   document.querySelector("#imageBanner").src="https://pbs.twimg.com/media/EJ16B8pX0A4ye2g.jpg"
-   document.querySelector("#textBanner").textContent="4."
+   document.querySelector("#titleBanner").textContent="???"
+   document.querySelector("#imageBanner").src=""
+   document.querySelector("#textBanner").textContent="???"
 }
-
+//cards Certificados//
 function cardFunctionGrad(){
    var lista=document.querySelectorAll(".list-course li");
    lista.forEach(listaX=> {
       listaX.style.display="block";
    })
-   document.querySelector("#tituloCourse").textContent="Graduacao";
+   document.querySelector("#tituloCourse").textContent="Graduação";
    document.querySelector("#liCert").textContent="FIAP-Analise e Desenvolvimento de Sistemas-Em andamento";
    
 }
@@ -247,7 +254,7 @@ function cardFunctionHardCode(){
       listaX.style.display="block";
    })
    document.querySelector("#tituloCourse").textContent="Hard Code";
-   document.querySelector("#liCert").textContent="";
+   document.querySelector("#liCert").textContent="Aprenda a Programar- FIAP";
 }
 function cardFunctionWeb(){
    var lista=document.querySelectorAll(".list-course li");
@@ -255,7 +262,7 @@ function cardFunctionWeb(){
       listaX.style.display="block";
    })
    document.querySelector("#tituloCourse").textContent="Web Development";
-   document.querySelector("#liCert").textContent="";
+   document.querySelector("#liCert").textContent="Responsive Web Devlopment - FIAP";
 }
 function cardFunctionOutros(){
    var lista=document.querySelectorAll(".list-course li");
@@ -263,5 +270,5 @@ function cardFunctionOutros(){
       listaX.style.display="block";
    })
    document.querySelector("#tituloCourse").textContent="Outros";
-   document.querySelector("#liCert").textContent="";
+   document.querySelector("#liCert").textContent="Formação Social - FIAP";
 }

@@ -21,7 +21,7 @@ body{
     box-sizing: border-box;
 }
 
-
+    /* MENU */
 .section{
     height: 650px;
     width: 100%;
@@ -95,17 +95,16 @@ body{
 .menu i:hover{
     cursor: pointer;
 }
+/* //// EXPERIENCIA */
 
 .sectionSlides{
     border-bottom: black solid 1px;
     height: 800px;
     width: 100%;
-    
 }
 
-
 .flex-control-exp{
-    border:1px solid red;
+    
     display: flex;
     flex-direction: row;
     width: 1400px;
@@ -113,19 +112,52 @@ body{
     margin:0 auto;
 }
 .flex-sobre-mim{
-    border:1px solid green;
+    
     display: flex;
-    justify-content: column;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
     height: 100%;
+}
+
+.texto-mim{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    font-weight: bolder;
+    
+}
+.title-mim{
+    height: 10%;
+}
+.texto-mim h1{
+    text-align: center;
+    font-size: 30px;
+}
+.texto-mim h2{
+    font-size: 30px;
 }
 .flex-experienciasP{
-    border:1px solid green;
     display: flex;
-    justify-content: column;
+    flex-direction: column;
     width: 50%;
     height: 100%;
+    justify-content: center;
 }
+.experiencias-box{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+/* ///COMPETENCIAS */
 .flex-control-comp{
     display: flex;
     flex-direction: row;
@@ -134,7 +166,6 @@ body{
     width:1400px;
     height: 600px;
 }
-
 .linguagens{
     display: flex;
     flex-direction: column;
@@ -173,7 +204,7 @@ body{
     box-sizing: border-box;
     border-radius: 20px;
     border: 0.5px groove grey;
-    height: 50%;
+    height: 80%;
     margin-left:30px;
     max-width: 75%;
     min-width: 60%;
@@ -190,7 +221,7 @@ body{
 }
 
 .inside-bar span{
-    font-size: 10px;
+    font-size: 16px;
     margin:0 auto;
     font-weight: bolder;
 }
@@ -288,13 +319,14 @@ body{
     width: 100%;
 }
 .info-soft p{
+    font-size: 18px;
     font-weight: bolder;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
 
 }
-
+/* //PROJETOS */
 .flex-banner{
     box-sizing: border-box;
     display: flex;
@@ -304,8 +336,6 @@ body{
     height: 500px;
     margin:0 auto;
 }
-
-
 .title-banner{
     border-bottom:1px solid black;
     display: flex;
@@ -316,11 +346,9 @@ body{
     align-items: center;
     text-align: center;
 }
-
 .title-banner h1{
     margin:0;
 }
-
 .image-banner{
     display: flex;
     flex-direction: row;
@@ -336,8 +364,6 @@ body{
     width: 399px;
     box-sizing: border-box;
 }
-
-
 .text-banner{
     border-top: 1px solid black;
     display: flex;
@@ -352,7 +378,6 @@ body{
     text-align: center;
     margin-top:0;
 }
-
 .flex-project{
     display: flex;
     flex-direction: row;
@@ -363,20 +388,17 @@ body{
     margin-top:50px;
     
 }
-
 .flex-project img{
     box-sizing: border-box;
     border-radius: 50%;
     border:0.5px  solid rgb(87, 87, 87);
     transition: all .2s ease-in-out;
 }
-
-
 .flex-project img:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-
+/* //CERTIFICADOS */
 .flex-control-cert{
     border:3px groove rgb(49, 49, 49);
     display: flex;
@@ -386,7 +408,6 @@ body{
     height: 600px;
     align-items: center;
 }
-
 .projetos-escolha{
     display: flex;
     flex-direction: row;
@@ -395,14 +416,13 @@ body{
     width: 100%;
     align-items: center;
 }
-
 .card{
     border:3px groove rgb(58, 57, 57);
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 20%;
-    height: 80%;
+    height: 60%;
     transition: all .2s ease-in-out;
 }
 .card:hover{
@@ -422,24 +442,7 @@ body{
 .card-icon-cert span{
     font-weight: bolder;
     margin-top:10px;
-}
-    
-
-.card-text{
-    background-color: aqua;
-    border-top:1px solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:40%;
-    width: 100%;
-    text-align: center;
-}
-
-.card-text p{
-    font-weight: bolder;
-}
-
+}   
 .flex-card-selected{
     display: flex;
     flex-direction: row;
@@ -448,7 +451,6 @@ body{
     height:50%;
     align-items: center;
 }
-
 .card-selected{
     border-radius:10px;
     border: 2px groove rgb(39, 39, 39);
@@ -483,7 +485,6 @@ body{
     height:80% ;
     flex-wrap: wrap;
 }
-
 .list-course li{
     display: none;
     margin-bottom: 10px;
@@ -497,8 +498,7 @@ body{
     font-size: 30px;
     color: black;
 }
-
-
+/* //FOOTER */
 .footer{
     background-color: rgb(83, 82, 82, 0.3);
     display: flex;
@@ -517,4 +517,399 @@ body{
     font-weight: bolder;
     font-size: 30px;
     margin-left:30px;
+}
+
+@media (max-width:480px){
+    /* HEADER */
+    .section{
+        width: 100%;
+        background-size: contain;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header{
+        width: 100%;
+    }
+    .header-title{
+        display: none;
+    }
+    .header-list ul{
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-evenly;
+        
+    }
+    .sectionSlides{
+        width: 100%;
+        height: auto;
+    }
+    /* //experiencias */
+
+    .flex-control-exp{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .flex-sobre-mim{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .flex-experienciasP{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Competencias */
+    
+    .title{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .flex-control-comp{
+        margin: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    /* Linguagens */
+    .linguagens{
+        width: 100%;
+    }
+    .linguagens h1{
+        margin-bottom: 30px ;
+    }
+    .card-icon{
+        margin-bottom: 5px;
+    }
+   /* Soft Skills */
+    .soft-skills{
+        width: 100%;
+        height: 100%;
+        margin-top:50px;
+        border: none;
+    }
+    .soft-skills h1{
+        margin-bottom: 30px;
+    }
+    
+    .flex-soft{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .card-soft{
+        align-items: center;
+    }
+    
+        
+    .text-soft{
+        border:none
+    }
+    /* Projetos */
+    .flex-banner{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .title-banner{
+        width: 100%;
+        height:20%;
+    }
+    .image-banner img{
+        height: 60%;
+        width: 80%;
+    }
+    .flex-project{
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .projetos-escolha{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .flex-card-selected{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* Certificados */
+    .flex-control-cert{
+        width: 100%;
+    }
+    .projetos-escolha{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card{
+        height: 50%;
+    }
+}
+
+@media(min-width: 481px) and (max-width:768px){
+    /* HEADER */
+    .section{
+        width: 100%;
+        background-size: contain;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header{
+        justify-content: center;
+        width: 100%;
+    }
+    .header-title{
+        display: none;
+    }
+    .header-list ul{
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-evenly;
+        
+    }
+    /* //experiencias */
+
+    .flex-control-exp{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .flex-sobre-mim{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .flex-experienciasP{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Competencias */
+    .sectionSlides{
+        width: 100%;
+        height: auto;
+    }
+    
+    .title{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .flex-control-comp{
+        margin: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    /* Linguagens */
+    .linguagens{
+        width: 100%;
+    }
+    .linguagens h1{
+        margin-bottom: 30px ;
+    }
+    .card-icon{
+        margin-bottom: 5px;
+    }
+   /* Soft Skills */
+    .soft-skills{
+        width: 100%;
+        height: 100%;
+        margin-top:50px;
+        border: none;
+    }
+    .soft-skills h1{
+        margin-bottom: 30px;
+    }
+    
+    .flex-soft{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .card-soft{
+        align-items: center;
+    }
+    
+        
+    .text-soft{
+        border:none
+    }
+    /* Projetos */
+    .flex-banner{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .title-banner{
+        width: 100%;
+        height:20%;
+    }
+    .image-banner{
+        width: 50%;
+    }
+    .flex-project{
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .projetos-escolha{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .flex-card-selected{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* Certificados */
+    .flex-control-cert{
+        width: 100%;
+    }
+    .projetos-escolha{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card{
+        height: 50%;
+    }
+}
+
+@media(min-width: 769px) and (max-width:1279px){
+    /* HEADER */
+    .section{
+        width: 100%;
+        background-size: contain;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header{
+        justify-content: center;
+        width: 100%;
+    }
+    .header-title{
+        display: none;
+    }
+    .header-list ul{
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-evenly;
+        
+    }
+    /* //experiencias */
+
+    .flex-control-exp{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .flex-sobre-mim{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .flex-experienciasP{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Competencias */
+    .sectionSlides{
+        width: 100%;
+        height: auto;
+    }
+    
+    .title{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .flex-control-comp{
+        margin: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    /* Linguagens */
+    .linguagens{
+        width: 100%;
+    }
+    .linguagens h1{
+        margin-bottom: 30px ;
+    }
+    .card-icon{
+        margin-bottom: 5px;
+    }
+   /* Soft Skills */
+    .soft-skills{
+        width: 100%;
+        height: 100%;
+        margin-top:50px;
+        border: none;
+    }
+    .soft-skills h1{
+        margin-bottom: 30px;
+    }
+    
+    .flex-soft{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .card-soft{
+        align-items: center;
+    }
+    
+        
+    .text-soft{
+        border:none
+    }
+    /* Projetos */
+    .flex-banner{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .title-banner{
+        width: 100%;
+        height:20%;
+    }
+    .image-banner{
+        width: 50%;
+    }
+    .flex-project{
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .projetos-escolha{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .flex-card-selected{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* Certificados */
+    .flex-control-cert{
+        width: 100%;
+    }
+    .projetos-escolha{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card{
+        height: 50%;
+    }
 }
