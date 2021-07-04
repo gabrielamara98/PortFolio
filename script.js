@@ -44,6 +44,10 @@ function darkMode(){
     conteudoBarra.forEach(conteudoBarraX =>{
        conteudoBarraX.style.backgroundColor="gold";
    })
+   var progressBarSpan=document.querySelectorAll(".progress-bar span");
+   progressBarSpan.forEach(progressBarSpanX =>{
+      progressBarSpanX.style.color="black";
+   })
    //Soft Skills
    document.querySelector(".soft-skills").style.borderLeft="1px solid white"
    document.querySelector(".soft-skills h1").style.color="white";
@@ -151,6 +155,10 @@ function lightMode(){
     conteudoBarra.forEach(conteudoBarraX =>{
        conteudoBarraX.style.backgroundColor=null;
    })
+   var progressBarSpan=document.querySelectorAll(".progress-bar span");
+   progressBarSpan.forEach(progressBarSpanX =>{
+      progressBarSpanX.style.color=null;
+   })
    //Soft Skills
    document.querySelector(".soft-skills").style.borderLeft=null
    document.querySelector(".soft-skills h1").style.color=null;
@@ -218,7 +226,7 @@ function lightMode(){
 function myFunction(){
    document.querySelector("#titleBanner").textContent="Rainbow Six Extraction Fan Wiki"
    document.querySelector("#imageBanner").src="./img/R6-EXTRACTION.jpg"
-   document.querySelector("#textBanner").textContent="Uma fan Wiki reservada especialmente para para o novo jogo da franquia Rainbow Six. https://github.com/Capamara/Rainbow-Six-Extraction"
+   document.querySelector("#textBanner").textContent="Uma fan Wiki reservada especialmente para o novo jogo da franquia Rainbow Six. https://github.com/Capamara/Rainbow-Six-Extraction"
 }
 
 function myFunction1(){
@@ -253,7 +261,7 @@ function cardFunctionHardCode(){
    lista.forEach(listaX=> {
       listaX.style.display="block";
    })
-   document.querySelector("#tituloCourse").textContent="Hard Code";
+   document.querySelector("#tituloCourse").textContent="Codes";
    document.querySelector("#liCert").textContent="Aprenda a Programar- FIAP";
 }
 function cardFunctionWeb(){
