@@ -25,7 +25,7 @@ body{
 .section{
     height: 650px;
     width: 100%;
-    background-image: url("./img/image.jpg");
+    background-image: url("./img/LightModeBackground.jpg");
     background-size: cover;
     background-attachment: fixed;
 

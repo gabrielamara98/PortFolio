@@ -1,7 +1,7 @@
 
 function darkMode(){
    //header-sections//
-   document.querySelector(".section").style.backgroundImage="url(./img/image4.jpg)"
+   document.querySelector(".section").style.backgroundImage="url(./img/DarkModeBackground.jpg)"
    var backColor=document.querySelectorAll(".sectionSlides");
    for(i=0;i<backColor.length;i++){
       backColor[i].style.borderBottom="1px solid gold"
@@ -115,7 +115,7 @@ function darkMode(){
 //////////////////////////////////////////////
 function lightMode(){
    //header-sections//
-   document.querySelector(".section").style.backgroundImage="url(./img/image.jpg)"
+   document.querySelector(".section").style.backgroundImage="url(./img/LightModeBackground.jpg)"
    var backColor=document.querySelectorAll(".sectionSlides");
    for(i=0;i<backColor.length;i++){
       backColor[i].style.borderBottom=null
@@ -225,7 +225,7 @@ function lightMode(){
 //Functions for select projects changes//
 function myFunction(){
    document.querySelector("#titleBanner").textContent="Rainbow Six Extraction Fan Wiki"
-   document.querySelector("#imageBanner").src="./img/R6-EXTRACTION.jpg"
+   document.querySelector("#imageBanner").src="./img/R6TemplateImage.jpg"
    document.querySelector("#textBanner").textContent="Uma fan Wiki reservada especialmente para o novo jogo da franquia Rainbow Six. https://github.com/Capamara/Rainbow-Six-Extraction"
 }
 
