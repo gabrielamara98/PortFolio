@@ -9,6 +9,7 @@ Este PortFolio contém informações sobre minha formação e um pouco sobre min
 Sinta-se a vontade de me contatar pelo: 
 <br>
 
+
 <a href="https://www.linkedin.com/in/gabriel-amara/" alt="Linkedin">
 <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabriel-amara/" /></a>
 
@@ -24,7 +25,7 @@ Questo PortFolio racconta la mia formazione accademica e un po' della mia giorna
 Potete contatarmi su: 
 <br>
 
-<a href="https://www.linkedin.com/in/gabriel-amara/" alt="Linkedin">
+<a href="https://www.linkedin.com/in/gabriel-amara/" alt="Linkedin" align="center">
 <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabriel-amara/" /></a>
 <hr>
 
@@ -40,3 +41,16 @@ Feel free to contact me at:
 <a href="https://www.linkedin.com/in/gabriel-amara/" alt="Linkedin">
 <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabriel-amara/" /></a>
 <hr>
+
+# Preview:
+<img 
+src="./img/ExampleGitHub1.png" alt="Preview PortFolio 1"> 
+
+> Light Mode Portfolio
+
+<img 
+src="./img/ExampleGitHub2.png" alt="Preview PortFolio 2 "> 
+
+> Dark Mode Portfolio
+
+
