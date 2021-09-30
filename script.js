@@ -271,6 +271,8 @@ function cardFunctionWeb(){
    })
    document.querySelector("#tituloCourse").textContent="Web Development";
    document.querySelector("#liCert").textContent="Responsive Web Devlopment - FIAP";
+   // document.querySelector("#liCert1").textContent="React -Em andamento - Alura";
+   // document.querySelector("#liCert2").textContent="Acessibilidade Web -Em andamento - Alura";
 }
 function cardFunctionOutros(){
    var lista=document.querySelectorAll(".list-course li");
